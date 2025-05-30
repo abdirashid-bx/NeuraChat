@@ -1,4 +1,4 @@
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import { useRouter } from 'expo-router'
 import {supabase} from '@/lip/susbaseClient'
@@ -13,32 +13,29 @@ const index = () => {
   const [error,seterror]=useState('');
 
 const handleAI = async () => {
-  const { user, error } = await supabase.auth.signUp(
+  const {  error } = await supabase.auth.signUp(
     {
       email,
       password:passwrod,
     },
-    {
-      data: {
-        fullname,
-      },
-    }
+    {data:{fullname}}
   );
 
   if (error) {
     seterror(error.message);
   } else {
+     
     routers.replace('/(auth)/signin');
   }
 };
-
  
-   
+ 
   return (
-    <View className='flex-1 items-center bg-[#0B0F19] flex-column'>
+    <ScrollView className='flex-1  bg-[#0B0F19] '>
+      <View className='items-center flex-column'>
       <Image 
          source={require('@/assets/images/NeuraChat1.png')}
-        className='w-[25rem] h-[15rem] mt-[7rem]'
+        className='w-[25rem] h-[15rem] mt-[3rem]'
       />
       <Text className='font-bold text-4xl text-white mb-'>Sing up</Text>
       <Text className='font-light text-white mt-4 text-2xl'>And Get Started With us</Text>
@@ -76,7 +73,8 @@ const handleAI = async () => {
       >
         <Text className='text-white text-[1.3rem] text-center'>Sing up</Text>
       </TouchableOpacity>
-    </View>
+      </View>
+    </ScrollView>
   )
 }
 

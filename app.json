@@ -1,42 +1,35 @@
 {
   "expo": {
-    "name": "singin",
-    "slug": "singin",
+    "name": "NeuraChat",
+    "slug": "toggle",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "singin",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/NeuraChat1.png",
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
+      "splash": {
+        "image": "./assets/images/NeuraChat1.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#000000"
+      },
+      "edgeToEdgeEnabled": true,
+      "statusBar": {
+        "backgroundColor": "#000000",
+        "translucent": true,
+        "barStyle": "light-content"
+      },
+      "package": "com.abdirashiidbx.toggle"
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+    "splash": {
+      "image": "./assets/images/NeuraChat1.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
     },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
+    "extra": {
+      "eas": {
+        "projectId": "b8dcebfb-ee91-4b44-9625-7fe2675b3193"
+      }
     }
   }
 }

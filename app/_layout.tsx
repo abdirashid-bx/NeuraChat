@@ -1,11 +1,14 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { Stack } from 'expo-router'
-import './global.css'
-const _layout = () => {
-  return (
-<Stack screenOptions={{headerShown:false}} />
-  )
-}
+import { useEffect, useState } from "react";
+import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { View } from "react-native";
+ 
+import { Authprovider } from "@/AuthPro/Authprovider";
 
-export default _layout
+export default function RootLayout() {
+   return (
+    <Authprovider>
+      <Stack screenOptions={{ headerShown: false }} />
+    </Authprovider>
+  );
+}
