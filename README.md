@@ -1,28 +1,24 @@
-NeuraChat
-NeuraChat is a sleek, full-stack chat app built with React Native and Tailwind CSS. It simulates real-time conversations, offering a clean interface and quick responses — all designed with a focus on simplicity and user experience.
+# NeuraChat
 
-Features
-Real-time chat UI
+NeuraChat is a sleek, AI-powered chat app built with React Native and Tailwind CSS. It simulates real-time conversations, offering a clean interface and quick responses — all designed with a focus on simplicity and user experience.
 
-User authentication (login & signup) powered by Supabase
+## Features
 
-Instant "Thinking..." feedback
+- Real-time chat UI
+- Smooth FlatList integration
+- Instant "Thinking..." feedback
+- Styled with Tailwind CSS
+- Easy to use and responsive layout
 
-Smooth FlatList integration
+## Tech Stack
 
-Styled with Tailwind CSS
+- React Native
+- Tailwind CSS
+- JavaScript
 
-Easy to use and responsive layout
+## About the Developer
 
-Tech Stack
-React Native
+Hi! I'm Abdirashiid, a passionate developer who enjoys building smart solutions using modern web and mobile tools. This project reflects my curiosity, growth, and love for creative coding.
 
-Tailwind CSS
-
-JavaScript
-
-Supabase (Authentication & Backend)
-
-About the Developer
-Hi! I'm Abdirashiid, a passionate developer who enjoys building smart solutions using modern web and mobile tools. This project reflects my curiosity, growth, and love for creative coding — now exploring full-stack development with Supabase integration.
+ 
 
