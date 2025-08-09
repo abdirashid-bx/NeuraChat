@@ -1,9 +1,3 @@
-Got it — you want the **NeuraChat** README rewritten so it correctly describes your **Quiz App** built with **React.js**, **TypeScript**, and **Tailwind CSS** while keeping the same clean, professional style.
-
-Here’s the fixed version:
-
----
-
 # Quiz App
 
 Quiz App is a fast and interactive web application built with React.js, TypeScript, and Tailwind CSS. It delivers a smooth quiz-taking experience with a clean design and instant feedback — all focused on simplicity and user engagement.
